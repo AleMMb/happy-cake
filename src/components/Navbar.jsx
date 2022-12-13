@@ -8,7 +8,7 @@ import book from "../img/navbarbook.png";
 
 function Nabvar() {
   return (
-    <Navbar style={{backgroundColor:'crimson'}}>
+    <Navbar style={{backgroundColor:'crimson'}} variant="dark">
       <Container>
         <Nav className=" w-100 d-flex flex-row justify-content-between">
           <div className="d-flex">
@@ -27,7 +27,7 @@ function Nabvar() {
           </div>
           <div className=" d-flex align-items-center">
           <LinkContainer to="/Home">
-            <Navbar.Brand> Happy Cake</Navbar.Brand>
+            <Navbar.Brand><strong>Happy Cake</strong></Navbar.Brand>
           </LinkContainer>
             <img src={cake} width="24" height="24" alt="store logo" />
           </div>
