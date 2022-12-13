@@ -1,16 +1,24 @@
+
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Nabvar from "./components/Navbar";
-import FormUser from "./views/FormUser";
 import Home from "./views/Home";
+import FormUser from "./views/FormUser";
+import NotFound from "./views/NotFound";
+
+
 
 
 function App() {
   return (
-    <div className="">
+    <BrowserRouter>
       <Nabvar />
-      <FormUser />
-      <Home />
-    </div>
+      <Routes>
+        <Route path="/Home" element={<Home/>} />
+        <Route path="/Contacto" element={<FormUser/>} />
+        <Route path="*" element={<NotFound/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
