@@ -14,6 +14,7 @@ function App() {
     <BrowserRouter>
       <Nabvar />
       <Routes>
+        <Route path= "/" element={<Home/>}/>
         <Route path="/Home" element={<Home/>} />
         <Route path="/Contacto" element={<FormUser/>} />
         <Route path="*" element={<NotFound/>} />
